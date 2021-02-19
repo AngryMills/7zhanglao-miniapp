@@ -9,13 +9,13 @@
         <version>2.3.0.RELEASE</version>
     </parent>
 
-    <groupId>com.github.binarywang</groupId>
+    <groupId>com.mys.my.7zhanglao</groupId>
     <version>1.0.0-SNAPSHOT</version>
-    <artifactId>weixin-java-miniapp-demo</artifactId>
+    <artifactId>wx-miniapp</artifactId>
     <packaging>jar</packaging>
 
-    <name>spring-boot-demo-for-wechat-miniapp</name>
-    <description>Spring Boot Demo with wechat miniapp</description>
+    <name>wx-miniapp</name>
+    <description>微信小程序</description>
 
     <properties>
         <weixin-java-miniapp.version>4.0.0</weixin-java-miniapp.version>
