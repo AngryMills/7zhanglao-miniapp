@@ -1,0 +1,28 @@
+
+logging:
+  level:
+    org.springframework.web: info
+    com.github.binarywang.demo.wx.miniapp: debug
+    cn.binarywang.wx.miniapp: debug
+wx:
+  miniapp:
+    configs:
+        - appid: 1 #微信小程序的appid
+          secret: 1 #微信小程序的Secret
+          token: 1 #微信小程序消息服务器配置的token
+          aesKey: 1 #微信小程序消息服务器配置的EncodingAESKey
+          msgDataFormat: JSON
+server:
+    servlet:
+        context-path:
+    port: 9011
+spring:
+    datasource:
+        username: root
+        password: root
+        url: jdbc:mysql://localhost:3306/7zhanglao_wx_miniapp?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull&useSSL=false
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+    mapper-locations: classpath:mappers/*Mapper.xml
+    type-aliases-package: com.mys.my.zhanglao.wx.miniapp.domain
